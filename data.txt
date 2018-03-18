@@ -1,1 +1,2 @@
 LATITUD     ALTITUD     ARCHIVO
+20      30      imagen0001.jpg
