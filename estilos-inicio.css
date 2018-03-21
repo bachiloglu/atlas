@@ -1,8 +1,12 @@
-h1 {
-	font-size: 10px;
-	background-color: green;
-	text-align:  right;
-	padding: 3px;
-	margin: 1px;
-	color: white;
+* {box-sizing: border-box;}
+.img-magnifier-container {
+  position: relative;
+}
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
 }
