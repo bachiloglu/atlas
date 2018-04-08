@@ -1,0 +1,41 @@
+* {box-sizing: border-box;}
+.img-magnifier-container {
+  position: relative;
+}
+.img-magnifier-glass {
+  position: absolute;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 150px;
+}
+
+body {
+	margin: 0 auto;
+}
+
+.contenedor {
+	
+	width: 100%;
+	height: 100%;
+	/*background-color: blue;*/
+}
+
+#foto-1{
+
+	position: relative;
+	margin-top: 500px;
+	margin-left: 200px;
+
+
+}
+
+
+#etiquetas-fijas{
+	
+	background-color: rgba(0, 0, 0, 50);
+	width: 100%;
+	height: 150px;
+	margin: 0 auto;
+
+}
