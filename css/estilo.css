@@ -185,7 +185,7 @@ li{
 
 
 
-@media (max-width: 800px) and (min-width: 300px) {
+@media (max-width: 800px) and (min-width: 100px) {
 .sidebar { width:40%;
         overflow-x: hidden;}
 
