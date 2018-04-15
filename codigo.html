@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Codigo</title>
+
+	<link rel="stylesheet" type="text/css" href="estilos/estilo-codigo.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Enriqueta" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link rel="shortcut icon" href="favicon.png">
+
+</head>
+<body>
+
+
+	<div id="sidebar" class="sidebar">
+    	<a href="#" class="boton-cerrar" onclick="ocultar()"><i class="fas fa-bars"></i></a>
+		<ul class="menu">
+    		<li><a href="index.html">MEMORIAS CARTOGRÁFICAS</a></li>
+    		<li><a>CÓDIGO</a></li>
+    		<li><a href="creditos.html">CRÉDITOS IMÁGENES</a></li>
+    		<li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
+		</ul>
+		
+  </div>
+
+
+<div id="todo">
+
+
+<div class="contenedor"> 
+	<a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><i class="	fas fa-bars"></i></a><a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()"></a>
+	<h1>MEMORIAS CARTOGRÁFICAS</h1>
+	<h3>Código</h3>
+</div>
+
+
+</div>
+	
+
+
+
+
+<script type="text/javascript">
+function mostrar() {
+    document.getElementById("sidebar").style.width = "300px";
+    document.getElementById("contenido").style.marginLeft = "300px";
+    document.getElementById("abrir").style.display = "none";
+    document.getElementById("cerrar").style.display = "inline";
+   
+}
+
+function ocultar() {
+    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("contenido").style.marginLeft = "0";
+    document.getElementById("abrir").style.display = "inline";
+    document.getElementById("cerrar").style.display = "none";
+
+}
+</script>
+
+</body>
+</html>
