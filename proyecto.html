@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sobre el proyecto</title>
+
+	<link rel="stylesheet" type="text/css" href="estilos/estilo-proyecto.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Enriqueta" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link rel="shortcut icon" href="favicon.png">
+
+</head>
+<body>
+
+
+	<div id="sidebar" class="sidebar">
+    	<a href="#" class="cerrar" onclick="ocultar()"></i></a>
+		<ul class="menu">
+    		<li><a style="color:rgb(110,79,76)">SOBRE EL PROYECTO</a></li>
+    		<li><a href="codigo.html">CÓDIGO</a></li>
+    		<li><a href="creditos.html">CRÉDITOS IMÁGENES</a></li>
+    		<li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
+		</ul>
+		
+  </div>
+
+
+
+
+
+<div class="contenedor"> 
+	<h1><a id="titulo" href="index.html">MEMORIAS CARTOGRÁFICAS</a></h1>
+</div>
+<div id="izq">
+<div id="parrafo"><p><i>Memorias cartográficas</i> es un modelo de visualización para los límites visuales que se trazan sobre las tierras que habitamos, propone discutir en torno a las diversas representaciones cartográficas que conforman el imaginario de nuestros territorios.<br>
+<br>
+Centrando la atención en las evocaciones que las imágenes provocan por sí mismas y en las relaciones cambiantes que establecen entre ellas y con quien las observa, este atlas de imágenes plantea una cartografía abierta que no se lee de manera secuencial, sino está dispuesta de manera anacrónica, adireccional e indeterminada, y su lectura idea un proceso de exploración y presentación de sistemas de relaciones no-evidentes.<br>
+<br>
+A partir de la recopilación documental de representaciones cartográficas de las zonas limítrofes de Chile y Bolivia se problematiza respecto a los límites visuales que dichos documentos instalan entre estos países. Así, las 200 imágenes que conforman la muestra han sido etiquetadas utilizando tags, en búsqueda de generar grupos críticos  que devienen de las relaciones que emergen de su entrecruzamiento, como la geometrización del territorio, los caminos, las alturas, la cordillera como eje estructural, el uso y relación con la tierra, entre otros.<br>
+
+
+ </p></div>
+
+ </div>
+
+
+
+
+ <div id="derecha">
+<div id="infoto"><p> Panoramas: Ilustración (Panorama de Rio frio,Viaje al Desierto de Atacama de Rodulfo Amando Philippi, Biblioteca Fundamentos de la Construcción de Chile, 2008); Tejido andino (Cereceda, V., Dávalos, J., & Mejía, I. (1993). Una diferencia, un sentido: Los diseños de los textiles tarabuco y jal’qa. ASUR) </p>
+</div>
+
+ <img src="panoramas.jpg">
+
+
+ <div id="pie" >
+<p>
+“Así como un reloj, como símbolo gráfico de la autoridad política centralizada, trajo consigo la «disciplina del tiempo» al ritmo de los trabajadores industriales, las líneas de los mapas, dictadoras de una nueva topografía, introdujeron una dimensión de «disciplina del espacio»”<br>
+(J. B Harley, 2005, p. 90)
+ </div>
+ </div>
+
+
+
+
+
+
+<script type="text/javascript">
+function mostrar() {
+    document.getElementById("sidebar").style.width = "300px";
+    document.getElementById("contenido").style.marginLeft = "300px";
+    document.getElementById("abrir").style.display = "inline";
+    document.getElementById("cerrar").style.display = "inline";
+   
+}
+
+function ocultar() {
+    document.getElementById("sidebar").style.width = "300px";
+    document.getElementById("contenido").style.marginLeft = "0";
+    document.getElementById("abrir").style.display = "inline";
+    document.getElementById("cerrar").style.display = "none";
+
+}
+</script>
+
+</body>
+</html>

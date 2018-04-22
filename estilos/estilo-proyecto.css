@@ -6,7 +6,6 @@ body {
 
 
 
-
 #contenedor{
     position: absolute;
     width: 100%;
@@ -16,9 +15,9 @@ body {
 
 h1 {
     float: left;
-    position: absolute;
+    position: relative;
     left: 34%;
-    margin-top: 5%;
+    margin-top: 3%;
     z-index: 10;
     color: white;
     font-family: 'Enriqueta', serif;
@@ -32,29 +31,69 @@ h1 {
 }
 
 #parrafo{
-    float: left;
+    float: right;
     position: absolute;
     z-index: 10;
-    width: 50%;
-    height:50%;
-    left: 34%;
     color: white;
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 16px;
-    margin-top:13%;
+    text-align: right;
 
 
 }
 
-#github{
-    text-decoration: none;
-    color:rgb(203, 79, 76);
 
+#izq {
+    position: absolute;
+    float: left;
+    left: 25%;
+    height: 50%;
+    width: 30%;
+    top:19.5%;
 }
 
-#discl {
-    color: rgb(60,60,60);
+#derecha{
+    position: absolute;
+    left: 55%;
+    float: left;
+    margin-left: 5%;
+    width: 33%;
+    top: 25.5%;
 }
+
+img {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+
+#pie {
+
+    float: left;
+    position: relative;
+    z-index: 10;
+    max-width: 100%;
+    color: rgb(223,79,76);
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+}
+
+
+#infoto{
+    float: left;
+    position: relative;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 12px;
+    text-align: right;
+    line-height: 100%;
+}
+
+
+
+
+
 
 
 
@@ -118,8 +157,8 @@ h1 {
 
 .sidebar a {
     position: relative;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 22px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 22px;
     display: block;
     font-size: 120%;
     color: rgb(255,255,255);

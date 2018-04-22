@@ -3,20 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>MEMORIAS CARTOGRÁFICAS</title>
-	<link rel="stylesheet" type="text/css" href="estilos-inicio.css">
+	
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Enriqueta" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 	<link rel="shortcut icon" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="estilos-inicio.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	
 </head>
 
 <body>
 
 
-	<div id="sidebar" class="sidebar">
+	<div id="sidebarr" class="sidebarr">
     	<a href="#" class="boton-cerrar" onclick="ocultar()"><i class="fas fa-bars"></i></a>
-		<ul class="menu">
-    		<li><a>MEMORIAS CARTOGRÁFICAS</a></li>
+		<ul class="menu" style="padding-top:10%;">
+    		<li><a href="proyecto.html">SOBRE EL PROYECTO</a></li>
     		<li><a href="codigo.html">CÓDIGO</a></li>
     		<li><a href="creditos.html">CRÉDITOS IMÁGENES</a></li>
     		<li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
@@ -25,34 +31,102 @@
   </div>
 
 
-	<h1>MEMORIAS CARTOGRÁFICAS</h1>
+	<h1 id="titulo">MEMORIAS CARTOGRÁFICAS</h1>
 
 <div class="contenedor"> 
 	<a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><i class="	fas fa-bars"></i></a><a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()"></a>
-	<img src="img/home.jpg"></img>
+
+
+	<a id="tecla" href="#" data-animation="true" data-toggle="popover"  animation="true" data-placement="left" data-trigger="focus" data-html='true' data-content="<a style='text-decoration:none; color:rgb(203,79,76)' href='etiquetas/mef.html'>#MuseoDeEtnografiaYFolklore</a>"><img class="icono" src="https://78.media.tumblr.com/100588a51136e2fa9550bf546303f7af/tumblr_p7f0e6J9YP1xqailxo1_1280.jpg" style="width:100%"></img></a>
+	
+	<a id="tecla-1" href="#" data-toggle="popover" role="button" animation="true" data-placement="right" data-trigger="focus" data-html='true' data-content="<a style='text-decoration:none; color:rgb(203,79,76)' href='etiquetas/asa.html'>#AntropologosDelSurAndino</a>"><img class="icono" src="https://78.media.tumblr.com/fe820c76d2d72848a4491a178cd0bf66/tumblr_p7eotxRKgy1xqailxo1_1280.jpg" style="width:100%"></img></a>
+
+	<a id="tecla-2" href="#" data-toggle="popover" role="button" animation="true" data-placement="right" data-trigger="focus" data-html='true' data-content="<a style='text-decoration:none; color:rgb(203,79,76)' href='etiquetas/banbol.html'>#BibliotecaYArchivoNacionalDeBolivia</a>"><img class="icono" src="https://78.media.tumblr.com/45cac2951b9de737464592ff749da9cc/tumblr_p7eq0pWFrG1xqailxo1_1280.jpg" style="width:100%"></img></a>
+
+	<a id="tecla-3" href="#" data-toggle="popover" role="button" animation="true" data-placement="left" data-trigger="focus" data-html='true' data-content="<a style='text-decoration:none; color:rgb(203,79,76)' href='etiquetas/bancl.html'>#BibliotecaYArchivoNacionalDeChile</a>"><img class="icono" src="https://78.media.tumblr.com/d1dfe64d5e881a01562bdcaa61c79e06/tumblr_p7eq96W0tA1xqailxo1_1280.jpg" style="width:100%"></img></a>
+
+
+	<a id="tecla-4" href="#" data-toggle="popover" role="button" animation="true" data-placement="right" data-trigger="focus" data-html='true' data-content="<a style='text-decoration:none; color:rgb(203,79,76)' href='etiquetas/mclap.html'>#MuseoChilenoDeArtePrecolombino</a>"><img class="icono" src="https://78.media.tumblr.com/a15fd7f15fd3b435b94d8940eb6a0599/tumblr_p7ez2lwMtj1xqailxo1_1280.jpg" style="width:100%"></img></a>
+
+
+
+	<img id="fondo" src="img/home.jpg"></img>
+
+
+	
+	
+
 </div>
 
 
-<div id="footer">
-	<ul>
-		<li class="foot"><a class="enlaces" href="etiquetas/corpus.html">#Corpus</a></li>
-		<li class="foot"><a class="enlaces" href="etiquetas/t-racionalizado.html">#TerritorioRacionalizado</a></li>
+
+<div id="footerrr">
+	<ul id="contenido-f">
+		<li class="foot"><a class="enlaces" href="etiquetas/todas.html" style="margin-right:1.5%">#Todas</a></li>
+		<li class="foot"><a class="separador">|</a></li>
+		<li class="foot"><a class="enlaces" href="etiquetas/t-racionalizado.html" style="margin-left:1.5%"><b>#TerritorioRacionalizado</b></a></li>
 		<li class="foot"><a class="enlaces" href="etiquetas/organizacion.html">#Organizacion</a></li>
-		<li class="foot"><a class="enlaces" href="etiquetas/racionalizado.html">#Racionalizado</a></li>
+		<li class="foot"><a class="enlaces" href="etiquetas/racionalizado.html">#Racionalizacion</a></li>
 		<li class="foot"><a class="enlaces" href="etiquetas/cordillera.html">#CordilleraComoEjeEstructural</a></li>
-		<li class="foot"><a class="enlaces" href="etiquetas/alturas.html">#Alturas</a></li>
-		<li class="foot"><a class="enlaces" href="etiquetas/t-habitado.html">#TerritorioHabitado</a></li>
-		<li class="foot"><a class="enlaces" href="etiquetas/caminos.html">#CaminosRecorridos</a></li>
+		<li class="foot"><a class="enlaces" href="etiquetas/alturas.html" style="padding-right:1.5%;">#Alturas</a></li>
+		<li class="foot"><a class="separador">|</a></li>
+		<li class="foot"><a class="enlaces" href="etiquetas/t-habitado.html" style="margin-left:1.5%"><b>#TerritorioHabitado</b></a></li>
+		<li class="foot"><a class="enlaces" href="etiquetas/caminos.html">#Caminos</a></li>
 		<li class="foot"><a class="enlaces" href="etiquetas/usoyrelacion.html">#UsoyRelacionConLaTierra</a></li>
-		<li class="foot"><a class="enlaces" href="etiquetas/vivido.html">#EspacioGeograficoVivido</a></li>
-		<li class="foot"><a class="enlaces" href="etiquetas/t-disputa.html">#TerritorioEnDisputa</a></li>
+		<li class="foot"><a class="enlaces" href="etiquetas/vivido.html" style="margin-right:1.5%">#EspacioGeograficoVivido</a></li>
+		<li class="foot"><a class="separador">|</a></li>
+		<li class="foot"><a class="enlaces" href="etiquetas/t-disputa.html" style="margin-left:1.5%"><b>#TerritorioEnDisputa</b></a></li>
 		<li class="foot"><a class="enlaces" href="etiquetas/choque.html">#ChoqueCultural</a></li>
-		<li class="foot"><a class="enlaces" href="etiquetas/disputa.html">#Disputa</a></li>
-		
+		<li class="foot"><a class="enlaces" href="etiquetas/disputa.html" style="margin-right:1.5%">#Disputa</a></li>
+
+		<li class="foot"><a class="separador">|</a></li>
+
+
+		<li class="foot"><a  href="etiquetas/mclap.html" class="enlaces"  style="margin-left:1.5%">#MuseoChilenoDeArtePrecolombino</a></li>
+		<li class="foot"><a  href="etiquetas/bancl.html" class="enlaces">#BibliotecaYArchivoNacionalDeChile</a></li>
+		<li class="foot"><a  href="etiquetas/banbol.html" class="enlaces">#BibliotecaYArchivoNacionalDeBolivia</a></li>
+		<li class="foot"><a  href="etiquetas/mef.html" class="enlaces">#MuseoDeEtnografiaYFolklore</a></li>
+		<li class="foot"><a  href="etiquetas/asa.html" class="enlaces" style="margin-right:1.5%">#AntropologosDelSurAndino</a></li>
+
+
+		<li class="foot"><a class="separador">|</a></li>
+
+
+
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85); margin-left:1.5%">#Flora</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#Fauna</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#Personas</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#Simbologia</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#Infraestructura</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#MapaIlustrado</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#MapaCartografico</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#Fotografia</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#Ilustracion</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#Croquis</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#Pintura</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#Grabado</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#Textil</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#Cenital</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#PlanoGeneral</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#PuebloOriginario</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#Republicano</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#Color</a></li>
+		<li class="foot"><a class="enlaces" style="color:rgb(85,85,85)">#EscalaDeGrises</a></li>
+	
+
+
+
+
+
 	</ul>
-
-
 </div>
+
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({html:true, animation:true});   
+});
+</script>
 
 
 
@@ -64,19 +138,17 @@
 
 <script type="text/javascript">
 function mostrar() {
-    document.getElementById("sidebar").style.width = "300px";
+    document.getElementById("sidebarr").style.width = "300px";
     document.getElementById("contenido").style.marginLeft = "300px";
     document.getElementById("abrir").style.display = "none";
     document.getElementById("cerrar").style.display = "inline";
-    document.getElementById("todo").setAttribute("style","background-color: rgba(0,0,0,0.5)");
 }
 
 function ocultar() {
-    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("sidebarr").style.width = "0";
     document.getElementById("contenido").style.marginLeft = "0";
     document.getElementById("abrir").style.display = "inline";
     document.getElementById("cerrar").style.display = "none";
-    document.getElementById("todo").setAttribute("style","opacity:1; -moz-opacity:1; filter:alpha(opacity=1)");
 }
 </script>
 	
