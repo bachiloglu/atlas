@@ -53,8 +53,8 @@ body {
 
 #tecla-3{
     z-index: 500;
-    top:26%;
-    left: 69.5%;
+    top:28%;
+    left: 70.5%;
     position: fixed;
     width: 16px;
 
@@ -62,7 +62,7 @@ body {
 
 #tecla-4{
     z-index: 500;
-    top:26%;
+    top:28%;
     left: 72%;
     position: fixed;
     width: 16px;
