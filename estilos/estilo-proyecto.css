@@ -103,7 +103,7 @@ img {
     float: left;
     position: fixed;
     height: 100%;
-    width: 18%;
+    width: 20%;
     top: 0;
     left: 0;
     z-index: 2;
@@ -139,28 +139,33 @@ img {
     vertical-align: top;
 }
 
+
+.sidebar ul {
+    top: 222%;
+    margin-left: 100px;
+    margin: 5rem auto;
+    display: block;
+    width: 80%;
+    min-width:200px;
+    padding: 20%;
+}
+
 .sidebar ul, .sidebar li{
-    position: relative;
-    margin:0;
-    margin-left: 5%;
+    margin-top:10%;
+    margin-left: 7%;
     padding:0;
     list-style:none inside;
 
 }
 
-.sidebar ul {
-    margin: 4rem auto;
-    display: block;
-    width: 80%;
-    min-width:200px;
-}
+
 
 .sidebar a {
     position: relative;
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-size: 22px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
     display: block;
-    font-size: 120%;
+    font-size: 105%;
     color: rgb(255,255,255);
     text-decoration: none;
     margin-bottom: 5%;
