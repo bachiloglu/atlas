@@ -48,24 +48,127 @@ h1 {
     float: left;
     left: 25%;
     height: 50%;
-    width: 30%;
-    top:19.5%;
+    width: 34%;
+    top:16%;
 }
 
 #derecha{
     position: absolute;
-    left: 55%;
+    left: 58%;
     float: left;
     margin-left: 5%;
     width: 33%;
     top: 25.5%;
 }
 
-img {
-    position: relative;
+
+
+.container {
     float: left;
-    width: 100%;
+  position: relative;
+  width: 100%;
+  height: 50%;
 }
+
+#imaguno {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#overlayuno {
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.container:hover #overlayuno {
+  opacity: 0.8;
+}
+
+#textouno {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#textouno a{
+    color: rgb(203,79,76);
+  font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+#textouno a:hover{
+    color: rgb(103,79,76);
+    transition:0.3s;
+    text-decoration: none;
+
+}
+
+
+
+#imagdos {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#overlaydos {
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.container:hover #overlaydos {
+  opacity: 0.8;
+}
+
+#textodos {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#textodos a{
+    color: rgb(203,79,76);
+  font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+#textodos a:hover{
+    color: rgb(103,79,76);
+    transition: 0.3s;
+    
+    text-decoration: none;
+
+}
+
 
 
 #pie {
